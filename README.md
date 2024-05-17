@@ -1,9 +1,4 @@
-
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=805a46&height=150&section=header&text=Brinquedos%20API%20CP3&fontSize=40&fontColor=f0ebe6&animation=blinking&fontAlign=50&fontAlignY=35&width=1000" />
-
-
-
----
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=805a46&height=150&section=header&text=Brinquedos%20API%20CP3&fontSize=40&fontColor=f0ebe6&animation=blinking&fontAlign=50&fontAlignY=35&width=1000" />
 
 # Brinquedos API 🧸
 
@@ -18,7 +13,7 @@ Este projeto implementa uma API completa para manipulação de brinquedos, permi
 
 ## Configuração ⚙️
 
-O projeto é configurado através do arquivo `application.properties` na pasta `resources`, que define os parâmetros de conexão com o banco de dados Oracle.
+A configuração do projeto é realizada através do arquivo `application.properties` na pasta `resources`, que define os parâmetros de conexão com o banco de dados Oracle.
 
 ## Funcionalidades 📋
 
@@ -32,33 +27,28 @@ O projeto é configurado através do arquivo `application.properties` na pasta `
 - **Options (OPTIONS)**: Consulta os métodos HTTP permitidos para o endpoint. ℹ️
 - **Head (HEAD)**: Verifica se um brinquedo existe sem retornar o corpo da resposta. 📏
 
-### Endpoints
+## Endpoints
 
-## Consultar Brinquedo por ID
+### Consultar Brinquedo por ID
 
-**Endpoint:** GET /brinquedos/{id}
+**Endpoint**: `GET /brinquedos/{id}`
 
-**Descrição:** Retorna os detalhes de um único brinquedo.
+**Descrição**: Retorna os detalhes de um único brinquedo.
 
-**Parâmetros de URL:** 
+**Parâmetros de URL**:
 - `id` - ID do brinquedo a ser consultado.
 
-**Exemplo de Requisição:**
+**Exemplo de Requisição**:
 ```sh
-curl -X GET "http://localhost:8080/brinquedos/1"
+GET "http://localhost:8080/brinquedos/1"
+````
+### Criar Brinquedo
 
-# Criar Brinquedo
+**Endpoint**: `POST /brinquedos`
 
-## Endpoint
+**Descrição**: Adiciona um novo brinquedo.
 
-`POST /brinquedos`
-
-## Descrição
-
-Adiciona um novo brinquedo.
-
-## Corpo da Requisição
-
+**Corpo da Requisição**:
 ```json
 {
   "brinquedoNm": "Carrinho Turbo",
@@ -67,4 +57,3 @@ Adiciona um novo brinquedo.
   "brinquedoTam": "Médio",
   "brinquedoPreco": 35
 }
-
