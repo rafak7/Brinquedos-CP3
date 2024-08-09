@@ -14,7 +14,7 @@
 	<name>brinquedos</name>
 	<description>Checkpoint 2 Java Advanced</description>
 	<properties>
-		<java.version>22</java.version>
+		<java.version>17</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
